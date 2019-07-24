@@ -1,0 +1,30 @@
+﻿@model TrWebBlogEx.Models.NoteData
+@{
+    ViewBag.Title = "ShowNote";
+}
+
+<h2>News Display - View The Submitted Content</h2>
+<div class="panel panel-primary">
+    <div class="panel-heading panel-head">Add News</div>
+    <div class="panel-body">
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                @Html.LabelFor(model => model.Title, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-9">
+                    @Html.DisplayFor(model => model.Title, new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Content, new { @class = "col-lg-2 control-label" })
+                <div class="col-lg-9">
+                    @Html.Raw(Model.Content)
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
