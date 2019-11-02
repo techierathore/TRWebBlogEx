@@ -9,27 +9,26 @@ namespace TrWebBlogEx.Controllers
     public class SummerNoteExController : Controller
     {
         // GET: SummerNoteEx
-        public ActionResult NoteEntry()
+        public ActionResult BlogEntry()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult NoteEntry(NoteData aNoteData)
+        public ActionResult BlogEntry(BlogPost aBlogPost)
         {
-            return View("ShowNote", aNoteData);
+            return View("ShowNote", aBlogPost);
         }
         [AcceptVerbs(HttpVerbs.Post)]
         public JsonResult UploadFile(HttpPostedFileBase aUploadedFile)
         {
-            string sImageName = string.Empty;
             var vReturnImagePath = string.Empty;
             if (aUploadedFile.ContentLength > 0)
             {
                 var vFileName = Path.GetFileNameWithoutExtension(aUploadedFile.FileName);
                 var vExtension = Path.GetExtension(aUploadedFile.FileName);
 
-                sImageName = vFileName + DateTime.Now.ToString("YYYYMMDDHHMMSS");
+                string sImageName = vFileName + DateTime.Now.ToString("YYYYMMDDHHMMSS");
 
                 var vImageSavePath = Server.MapPath("/UpImages/") + sImageName + vExtension;
                  //sImageName = sImageName + vExtension;

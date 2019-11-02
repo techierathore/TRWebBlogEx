@@ -125,7 +125,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\NoteData.cs" />
+    <Compile Include="Models\BlogPost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -270,8 +270,8 @@
     <Content Include="Scripts\summernote\summernote-bs4.js.map" />
     <Content Include="Scripts\summernote\summernote-lite.js.map" />
     <Content Include="Scripts\summernote\summernote.js.map" />
-    <Content Include="Views\SummerNoteEx\NoteEntry.cshtml" />
-    <Content Include="Views\SummerNoteEx\ShowNote.cshtml" />
+    <Content Include="Views\SummerNoteEx\ShowBlog.cshtml" />
+    <Content Include="Views\SummerNoteEx\BlogEntry.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
