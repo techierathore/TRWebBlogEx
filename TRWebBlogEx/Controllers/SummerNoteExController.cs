@@ -17,7 +17,7 @@ namespace TrWebBlogEx.Controllers
         [HttpPost]
         public ActionResult BlogEntry(BlogPost aBlogPost)
         {
-            return View("ShowNote", aBlogPost);
+            return View("ShowBlog", aBlogPost);
         }
         [AcceptVerbs(HttpVerbs.Post)]
         public JsonResult UploadFile(HttpPostedFileBase aUploadedFile)
