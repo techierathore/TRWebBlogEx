@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.757
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRWebBlogEx", "TRWebBlogEx\TRWebBlogEx.csproj", "{B1518F37-50A7-43D2-86D2-31E73A796D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreIdentityEx", "CoreIdentityEx\CoreIdentityEx.csproj", "{320F38F3-59E9-4774-858B-AFF94FEB4C73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B1518F37-50A7-43D2-86D2-31E73A796D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1518F37-50A7-43D2-86D2-31E73A796D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1518F37-50A7-43D2-86D2-31E73A796D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320F38F3-59E9-4774-858B-AFF94FEB4C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320F38F3-59E9-4774-858B-AFF94FEB4C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320F38F3-59E9-4774-858B-AFF94FEB4C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320F38F3-59E9-4774-858B-AFF94FEB4C73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
